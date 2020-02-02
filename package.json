@@ -1,7 +1,7 @@
 {
   "author": "Vladimir Barbarosh",
   "name": "@vbarbarosh/vue-sizemon",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Monitoring size of a positioned ancestor",
   "license": "ISC",
   "main": "src/vue-sizemon.js",
