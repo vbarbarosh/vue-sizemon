@@ -22,3 +22,7 @@ Monitoring size of a [positioned ancestor](https://www.w3.org/TR/css-position-3/
 ## Using from browser
 
     <script src="https://unpkg.com/@vbarbarosh/vue-sizemon@1.0.0/dist/vue-sizemon.js"></script>
+
+## Related projects
+
+* [CSS Element Queries](https://github.com/marcj/css-element-queries)
