@@ -23,6 +23,7 @@ Monitoring size of a [positioned ancestor](https://www.w3.org/TR/css-position-3/
 
     <script src="https://unpkg.com/@vbarbarosh/vue-sizemon@1.0.0/dist/vue-sizemon.js"></script>
 
-## Related projects
+## Links
 
+* [How to detect DIV's dimension changed?](https://stackoverflow.com/questions/6492683/how-to-detect-divs-dimension-changed)
 * [CSS Element Queries](https://github.com/marcj/css-element-queries)
