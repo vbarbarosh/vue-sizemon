@@ -90,6 +90,22 @@
         <div v-pre class="col-md-6"></div>
     </div>
 
+    <div class="row">
+        <div class="col-md-6">
+            <button v-on:click="toggle" class="btn btn-primary">Toggle</button>
+            <br>
+            --size3.w={{ size3.w }}--
+            <br>
+            --size3.h={{ size3.h }}--
+            <br>
+            <div v-show="visible" v-bind:style="{width: px(p.x), height: px(p.y)}" class="canvas">
+                <vue-sizemon v-model="size3"></vue-sizemon>
+                <div v-on:mousedown="mousedown($event, p, 0.5)" v-bind:style="{top: px(p.y), left: px(p.x)}" class="box"></div>
+            </div>
+        </div>
+        <div v-pre class="col-md-6"></div>
+    </div>
+
 </div>
 
 <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
@@ -108,11 +124,16 @@
         data: {
             size1: {w: 0, h: 0},
             size2: {w: 0, h: 0},
+            size3: {w: 0, h: 0},
             p: {x: 540, y: 200},
+            visible: false,
         },
         methods: {
             px: function (v) {
                 return v ? (v + 'px') : 0;
+            },
+            toggle: function () {
+                this.visible = !this.visible;
             },
             mousedown: function (event, p, scale = 1) {
                 const x0 = p.x;
